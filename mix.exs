@@ -8,7 +8,7 @@ defmodule Telemetry.Metrics.MixProject do
       name: "Telemetry.Metrics",
       app: :telemetry_metrics,
       version: @version,
-      elixir: "~> 1.7",
+      elixir: "~> 1.11",
       start_permanent: Mix.env() == :prod,
       preferred_cli_env: preferred_cli_env(),
       deps: deps(),
@@ -38,7 +38,7 @@ defmodule Telemetry.Metrics.MixProject do
       {:telemetry, "~> 0.4 or ~> 1.0"},
       {:ex_doc, "~> 0.20", only: :docs},
       {:dialyxir, "~> 1.0", only: :test, runtime: false},
-      {:excoveralls, "~> 0.14.0", only: :test, runtime: false}
+      {:excoveralls, "~> 0.18", only: :test, runtime: false}
     ]
   end
 
